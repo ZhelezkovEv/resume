@@ -6,81 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, cource">
     <meta name="discription" content="Впервые создаю сайт">
+    <link rel="stylesheet" href="resume.css">
     <title>Zhelezkov resume</title>
 </head>
 <body>
 
-<img src="1.jpg" width="200">
+<div class="container">
+    <div class="info">
+    <img src="1.jpg" alt="Железков Евгений" class="avatar">
 
-    <h1>Железков Евгений</h1>
+    <div class="info-text"> <h1>Железков Евгений</h1> 
 
     <p>Я ученик курса по HTML, <strong><em>хочу пройти курс и стать специалистом в этой сфере.</em></strong></p>
-   
-   
+            
+            
     <p>Мне нравится играть в баскетбол и изучать мир</p>
 
-    <h2>Мои хобби: </h2>
+    <h2>Список соц сетей</h2> 
 
-    <ul>
-        <Li>Чтение</Li>
-        <Li>Компьютерные игры</Li>
-        <Li>Прогулки</Li>
-        <Li>Динозавры</Li>
-    </ul>
+    <a href="https://vk.com/zhelezkovev" target="_blank">VK </a>
+    |
+    <a href="https://t.me/zhelezkovEv" target="_blank">Telegram</a>            
+    |
+    </div>
+   </div> 
+          
+       
+           
+            
+            
 
-    <h2>Опыт работы</h2>
+    <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
 
-    <table>
-        <thead>
-            <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>ООО Ритейл</td>
-            <td>Продавец-конслуьтант</td>
-            <td>2018-2020</td>
-            </tr>
-            <tr>
-                <td>Тойота центр</td>
-                <td>автомоляр</td>
-                <td>2021-2021</td>
-                </tr>
-                <tr>
-                    <td>УК "ЖилГрад"</td>
-                    <td>Разнорабочий</td>
-                    <td>2022-2022</td>
+        <ul class="list">
+            <Li>Чтение</Li>
+            <Li>Компьютерные игры</Li>
+            <Li>Прогулки</Li>
+            <Li>Динозавры</Li>
+        </ul>
+    </div>
+
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <thead>
+                    <!-- <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                    </tr> -->
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>ООО Ритейл</td>
+                    <td>Продавец-конслуьтант</td>
+                    <td>2018-2020</td>
                     </tr>
-        </tbody>
-    </table>
+                    <tr>
+                        <td>Тойота центр</td>
+                        <td>автомоляр</td>
+                        <td>2021-2021</td>
+                        </tr>
+                        <tr>
+                            <td>УК "ЖилГрад"</td>
+                            <td>Разнорабочий</td>
+                            <td>2022-2022</td>
+                            </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <p><h2>Список соц сетей:</h2> 
-        <a href="https://vk.com/zhelezkovev" target="_blank">VK </a><br>
-        <a href="https://t.me/zhelezkovEv" target="_blank">Telegram</a>
-    </p>
+        
 
-    <h2>Связаться со мной</h2>
+        
+     <form action="/" class="form"> 
+        <h2>Связаться со мной</h2>
 
-    <div>
-        <label for="text">Ваше имя</label>
-        <input type="text" id="text"
-        placeholder="Введите имя">
-    </div>
+        <div class="form-row">
 
-    <div>
-        <label for="email">Ваш email</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
+            <div class="form-group">
+                <label for="text">Ваше имя</label>
+                <input type="text" id="text"
+                placeholder="Введите имя">
+            </div>
+        
 
-    <div>
-        <label for="message">Ваше сообщение:<br></label>
-        <textarea id="message" cols="25" rows="5"
-        placeholder="Введите сообщение...">
-        </textarea><br>
+            <div class="form-group">
+                <label for="email">Ваш email</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+        </div>
 
-        <button type="submit">Отправить!</button>
+        <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" cols="25" rows="5"
+            placeholder="Введите сообщение...">
+            </textarea><br>
+
+            <button type="submit" class="btn">Отправить!</button>
+        </div>
+     </form>      
+</div>
+
+
 </body>
 </html>
